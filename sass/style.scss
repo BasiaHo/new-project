@@ -1,0 +1,317 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navigation {
+
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+
+    .container {
+        .nav-logo {
+            display: flex;
+            justify-content: center;
+        }
+
+        .row {
+
+            .col {
+
+                align-items: center;
+            }
+
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                list-style-type: none;
+                justify-content: center;
+                align-items: flex-end;
+                padding: 0px;
+
+                li {
+                    margin: 0 15px 0 0;
+                    display: inline-block;
+
+                    a {
+                        color: white;
+                        text-decoration: none;
+                        font-size: 15px;
+                        font-family: 'Montserrat', sans-serif;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+
+                }
+
+            }
+        }
+    }
+}
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url("../images/Background-Image.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    height: 100vh;
+
+    .row.header-inner {
+        text-align: center;
+        flex-direction: column;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        margin: 0 auto;
+
+
+        h2 {
+
+            font-family: 'Source Serif Pro', serif;
+            font-size: 40px;
+            color: aliceblue;
+        }
+
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 53px;
+            color: aliceblue;
+        }
+
+        button {
+            background-color: #fed136;
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            padding: 20px 40px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            font-weight: 700;
+
+            &:hover {
+
+                cursor: pointer;
+                transform: scale(1.1);
+                transition-duration: 1s;
+
+            }
+        }
+    }
+}
+
+.services {
+
+    padding: 50px;
+
+    h1 {
+        font-family: 'Montserrat', sans-serif;
+        color: black;
+        text-align: center;
+        font-size: 35px;
+    }
+
+    .sub-title {
+        font-family: 'Source Serif Pro', serif;
+        color: silver;
+        font-style: italic;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .row {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .icon {
+
+            border-radius: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 4px solid;
+            margin: 0 auto;
+            width: 100px;
+            height: 100px;
+            border-color: #fed136;
+        }
+
+        .description {
+            text-align: center;
+
+            h3 {
+                font-family: 'Montserrat', sans-serif;
+            }
+
+            p {
+                font-family: 'Source Serif Pro', serif;
+                color: silver;
+            }
+        }
+    }
+}
+
+.portfolio {
+
+    background-color: white;
+    padding-top: 30px;
+
+    .container {
+
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            color: black;
+            text-align: center;
+            font-size: 35px;
+            margin-bottom: 5px;
+        }
+
+
+        .sub-title {
+            font-family: 'Source Serif Pro', serif;
+            color: silver;
+            font-style: italic;
+            text-align: center;
+            font-size: 20px;
+        }
+    }
+
+    .row {
+        display: flex;
+        padding-top: 40px;
+
+        .image {
+
+            height: 300px;
+            width: 300px;
+            margin: 0 auto;
+
+            img {
+                object-fit: cover;
+                height: 300px;
+                width: 300px;
+            }
+        }
+
+        .description {
+
+            background-color: white;
+            text-align: center;
+            width: 300px;
+            padding: 20px;
+            margin: 0 auto;
+            margin-bottom: 30px;
+            align-items: center;
+
+            h3 {
+                font-family: 'Montserrat', sans-serif;
+                color: black;
+                margin: 0 auto;
+            }
+
+            p {
+                font-family: 'Source Serif Pro', serif;
+                color: gray;
+                margin: 0 auto;
+            }
+        }
+    }
+
+}
+
+.page-footer {
+
+    text-align: center;
+    background-color: white;
+
+    .container {
+
+        .row {
+
+            justify-items: center;
+
+            .col {
+                margin: auto 0;
+            }
+
+            p {
+                font-family: 'Montserrat', sans-serif;
+                color: grey;
+                font-size: 15px;
+            }
+
+            ul {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                padding: 10px 0;
+
+                li {
+                    font-size: 0;
+                    margin-right: 15px;
+                    background: black;
+                    border-radius: 50%;
+                    padding: 10px;
+                    height: 40px;
+                    width: 40px;
+                    text-align: center;
+
+                    i {
+                        font-size: 20px;
+                        color: rgb(236, 226, 226);
+
+                    }
+
+                    a {
+                        text-decoration: none;
+                        justify-content: center;
+                        display: flex;
+                        flex-direction: column;
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+
+/*Media*/
+
+@media (max-width: 500px) {
+
+    .row.header-inner {
+
+        float: none;
+        display: block;
+
+        h2 {
+            font-family: 'Source Serif Pro', serif;
+            font-size: 20px;
+            color: aliceblue;
+        }
+
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 30px;
+            color: aliceblue;
+        }
+
+    }
+
+}
